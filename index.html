@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Juego del Ahorcado</title>
+  </head>
+  <body>
+    <div class="container">
+        <div>
+            <div class="imglogo">
+            <img class="logo" src="Vector.png" alt="logo">
+            <h1 class="titulo">Juego del Ahorcado</h1>
+               
+            </div>
+        </div> <br><br>
+        <div class="comenzar">
+          <button class="btn-iniciar" id="iniciar-juego">Comenzar Juego</button> 
+          <br><br>
+        </div>
+        <div class="img"><img src="pngwing.com.png" alt=""></div>
+      <div class="agregar">      
+      <p>Este juego tiene una determinada cantidad de palabras, pero también puedes agregar las tuyas personalizadas.</p>
+      <input class="text-input" type="text" id="input-nueva-palabra" placeholder="Escriba una nueva palabra para agregar"autofocus />
+      <span id="error" class="invisible">Ingresar solo letras, sin caracteres especiales</span>
+      <span id="repetida" class="invisible">La palabra ya se encuentra agregada</span>
+      <span id="agregada" class="invisible">¡La palabra fue agregada con éxito!</span>
+      <button class="btn-agregar" id="nueva-palabra">Agregar Palabra</button>
+  
+    </div>
+    <div style="text-align: center">
+      <canvas id="ahorcado" height="800px" width="1200px"></canvas>
+    </div>
+    </div>
+    <script type="text/javascript" src="canvas.js"></script>
+    <script type="text/javascript" src="ahorcado.js"></script>
+    <script type="text/javascript" src="validaciones.js"></script>
+  </body>
+</html>
